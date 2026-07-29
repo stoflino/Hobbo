@@ -26,7 +26,7 @@ export function CodeRedeemForm({
     setMessage(null);
 
     const trimmed = code.trim();
-    if (trimmed.length !== 8) {
+    if (trimmed.length !== 4) {
       setMessage({ type: "error", text: "Kód musí mít přesně 8 znaků." });
       return;
     }
