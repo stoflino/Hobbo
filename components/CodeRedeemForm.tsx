@@ -64,7 +64,7 @@ export function CodeRedeemForm({
           maxLength={4}
           value={code}
           onChange={(e) => setCode(e.target.value.toUpperCase().replace(/[^A-Z0-9]/g, ""))}
-          placeholder="XXXXXXXX"
+          placeholder="XXXX"
           className="w-full rounded-lg border-2 border-street-border bg-street-bg px-4 py-5 text-center text-2xl font-bold tracking-[0.35em] text-street-text placeholder:tracking-normal placeholder:text-street-muted focus:border-street-accent focus:outline-none"
         />
 
