@@ -61,7 +61,7 @@ export function CodeRedeemForm({
           inputMode="text"
           autoComplete="off"
           autoCapitalize="characters"
-          maxLength={8}
+          maxLength={4}
           value={code}
           onChange={(e) => setCode(e.target.value.toUpperCase().replace(/[^A-Z0-9]/g, ""))}
           placeholder="XXXXXXXX"
@@ -70,7 +70,7 @@ export function CodeRedeemForm({
 
         <button
           type="submit"
-          disabled={loading || code.length !== 8}
+          disabled={loading || code.length !== 4}
           className="w-full rounded-lg bg-street-accent py-4 text-lg font-bold uppercase tracking-wider text-black transition hover:bg-street-accent-hover disabled:cursor-not-allowed disabled:opacity-50"
         >
           {loading ? "Ověřuji…" : "Použít kód"}
